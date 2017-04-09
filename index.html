@@ -20,22 +20,48 @@ Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-w
 
   <body>
 
-    <h3>What football team do you support?<h3>
+    <div class="cover">
 
-    <label>
-      <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-      <input type="radio" value="NFL" name="team"> <span>NFL</span>
-    </label>
+      <h3 class="question">What football team do you support?<h3>
 
-    <label>
-      <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-      <input type="radio" value="NBA" name="team"> <span>NBA</span>
-    </label>
+      <div class="Q1">
+        <div class="Q1-row1">
+          <div id="container" style="position:relative;">
+            <label class="flex-item">
+                <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
+                <input type="radio" value="NFL" name="team"> <span>NFL</span>
+            </label>
+          </div>
 
-    <label>
-      <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-      <input type="radio" value="MLB"  name="team"> <span>MLB</span>
-    </label>
+          <label class="flex-item">
+            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
+            <input type="radio" value="NBA" name="team"> <span>NBA</span>
+          </label>
+
+          <label class="flex-item">
+            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
+            <input type="radio" value="MLB"  name="team"> <span>MLB</span>
+          </label>
+        </div>
+        <div class="Q1-row2">
+          <label class="flex-item">
+            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
+            <input type="radio" value="NHL"  name="team"> <span>MLB</span>
+          </label>
+
+          <label class="flex-item">
+            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
+            <input type="radio" value="College Football"  name="team"> <span>MLB</span>
+          </label class="flex-item">
+
+          <label class="flex-item">
+            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
+            <input type="radio" value="College Basketball"  name="team"> <span>MLB</span>
+          </label>
+        </div>
+      </div>
+
+    </div>
 
     <script src="main.js"></script>
   </body>
