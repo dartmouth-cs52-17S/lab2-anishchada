@@ -1,8 +1,6 @@
-// THe below 5 lines were provided with the assignment
+// THe below 4 lines were provided with the assignment
 
 $('.button').on('click', function(e) {
-
-  // gather all checked radio-button values
 
   var choices = $("input[type='radio']:checked").map(function(i, radio) {
     return $(radio).val();
@@ -40,6 +38,7 @@ $('.button').on('click', function(e) {
         }
         if (el[t].checked==true) {
           el[t].parentElement.style.opacity=1;
+          el[t].parentElement.style.border="5px solid red";
         }
       }
     }
