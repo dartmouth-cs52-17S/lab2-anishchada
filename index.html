@@ -15,6 +15,7 @@ Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-w
 <html>
   <head>
     <title>Quiz</title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
@@ -22,47 +23,438 @@ Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-w
 
     <div class="cover">
 
-      <h3 class="question">What football team do you support?<h3>
+      <!--
+      The following 5 lines of code and the associate panel video is from the Hooli XYZ mock website: http://www.hooli.xyz/
+      Thought it was awesome enough to merit inclusion!
+      -->
+
+      <div>
+        <video autoplay loop class="splash-video" poster="/assets/splash-poster.jpg">
+          <source src="img/splash.webm" type="video/webm">
+          <source src="/assets/videos/splash.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="heading">
+        <h1>What is your postgrad career?</h1>
+      </div>
+
+      <div class="qtitle">
+        <h3 class="question">What is your favorite sport?<h3>
+      </div>
 
       <div class="Q1">
         <div class="Q1-row1">
-          <div id="container" style="position:relative;">
-            <label class="flex-item">
+
+          <label class="flex-item">
+              <div class="img_container" >
                 <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-                <input type="radio" value="NFL" name="team"> <span>NFL</span>
-            </label>
-          </div>
-
-          <label class="flex-item">
-            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-            <input type="radio" value="NBA" name="team"> <span>NBA</span>
+                <input type="radio" value="1" name="team" class="button"> <span>NFL</span>
+              </div>
           </label>
 
           <label class="flex-item">
-            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-            <input type="radio" value="MLB"  name="team"> <span>MLB</span>
+            <div class="img_container">
+              <img src="img/nba.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="2" name="team" class="button"> <span>NBA</span>
+            </div>
           </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/mlb.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="3" name="team" class="button"> <span>MLB</span>
+            </div>
+          </label>
+
         </div>
+
         <div class="Q1-row2">
+
           <label class="flex-item">
-            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-            <input type="radio" value="NHL"  name="team"> <span>MLB</span>
+            <div class="img_container">
+              <img src="img/nhl.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="4" name="team" class="button"> <span>NHL</span>
+            </div>
           </label>
 
           <label class="flex-item">
-            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-            <input type="radio" value="College Football"  name="team"> <span>MLB</span>
+            <div class="img_container">
+              <img src="img/CF.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="5" name="team" class="button"> <span>NCAAF</span>
+            </div>
           </label class="flex-item">
 
           <label class="flex-item">
-            <img src="img/NFL-Shield.jpg" style="width:304px;height:228px;">
-            <input type="radio" value="College Basketball"  name="team"> <span>MLB</span>
+            <div class="img_container">
+              <img src="img/cb.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="6" name="team" class="button"> <span>NCAAB</span>
+            </div>
           </label>
         </div>
+
+      </div>
+
+      <p id="demo1"></p>
+
+      <div class="qtitle">
+        <h3 class="question">What is your favorite place to eat on campus?<h3>
+      </div>
+
+      <div class="Q1">
+        <div class="Q1-row1">
+
+          <label class="flex-item">
+              <div class="img_container">
+                <img src="img/foco.jpg" style="width:304px;height:228px;">
+                <input type="radio" value="1" name="food" class="button"> <span>FoCo</span>
+              </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/hop.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="2" name="food" class="button"> <span>Hop</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/collis.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="3" name="food" class="button"> <span>Collis</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="Q1-row2">
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/novack.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="4" name="food" class="button"> <span>Novack</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/kaf.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="5" name="food" class="button"> <span>KAF</span>
+            </div>
+          </label class="flex-item">
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/eba.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="6" name="food" class="button"> <span>Off-campus</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <div class="qtitle">
+        <h3 class="question">What is your major?<h3>
+      </div>
+
+      <div class="Q1">
+        <div class="Q1-row1">
+
+          <label class="flex-item">
+              <div class="img_container">
+                <img src="img/econ.jpg" style="width:304px;height:228px;">
+                <input type="radio" value="1" name="major" class="button"> <span>Economics</span>
+              </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/gov.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="2" name="major" class="button"> <span>Government</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/history.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="3" name="major" class="button"> <span>History</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="Q1-row2">
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/cs.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="4" name="major" class="button"> <span>CS!</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/science.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="5" name="major" class="button"> <span>Math/Science</span>
+            </div>
+          </label class="flex-item">
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/other.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="6" name="major" class="button"> <span>Other</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <div class="qtitle">
+        <h3 class="question">What is your favorite TV Show here?<h3>
+      </div>
+
+      <div class="Q1">
+        <div class="Q1-row1">
+
+          <label class="flex-item">
+              <div class="img_container">
+                <img src="img/seinfeld.jpg" style="width:304px;height:228px;">
+                <input type="radio" value="1" name="tv" class="button"> <span>Seinfeld</span>
+              </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/friends.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="2" name="tv" class="button"> <span>Friends</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/cheers.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="3" name="tv" class="button"> <span>Cheers</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="Q1-row2">
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/bb.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="4" name="tv" class="button"> <span>Breaking Bad</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/tw.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="5" name="tv" class="button"> <span>The Wire</span>
+            </div>
+          </label class="flex-item">
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/td.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="6" name="tv" class="button"> <span>True Detective</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <div class="qtitle">
+        <h3 class="question">What is your favorite book here?<h3>
+      </div>
+
+      <div class="Q1">
+        <div class="Q1-row1">
+
+          <label class="flex-item">
+              <div class="img_container">
+                <img src="img/hp.jpg" style="width:304px;height:228px;">
+                <input type="radio" value="1" name="book" class="button"> <span>Harry Potter</span>
+              </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/lor.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="2" name="book" class="button"> <span>Lord of the Rings</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/hg.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="3" name="book" class="button"> <span>The Hunger Games</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="Q1-row2">
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/c22.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="4" name="book" class="button"> <span>Catch-22</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/f451.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="5" name="book" class="button"> <span>Fahrenheit 451</span>
+            </div>
+          </label class="flex-item">
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/out.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="6" name="book" class="button"> <span>The Outsiders</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <div class="qtitle">
+        <h3 class="question">What Seinfeld character are you?<h3>
+      </div>
+
+      <div class="Q1">
+        <div class="Q1-row1">
+
+          <label class="flex-item">
+              <div class="img_container">
+                <img src="img/jerry.jpg" style="width:304px;height:228px;">
+                <input type="radio" value="1" name="seinfeld" class="button"> <span>Jerry</span>
+              </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/george.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="2" name="seinfeld" class="button"> <span>George</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/kramer.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="3" name="seinfeld" class="button"> <span>Kramer</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="Q1-row2">
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/elaine.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="4" name="seinfeld" class="button"> <span>Elaine</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/newman.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="5" name="seinfeld" class="button"> <span>Newman</span>
+            </div>
+          </label class="flex-item">
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/soup.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="6" name="seinfeld" class="button"> <span>"The Soup Nazi"</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <div class="qtitle">
+        <h3 class="question">What is your coffee of choice?<h3>
+      </div>
+
+      <div class="Q1">
+        <div class="Q1-row1">
+
+          <label class="flex-item">
+              <div class="img_container">
+                <img src="img/reg.jpg" style="width:304px;height:228px;">
+                <input type="radio" value="1" name="coffee" class="button"> <span>Regular</span>
+              </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/iced.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="2" name="coffee" class="button"> <span>Iced Coffee</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/esp.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="3" name="coffee" class="button"> <span>Espresso</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="Q1-row2">
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/cap.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="4" name="coffee" class="button"> <span>Cappucino</span>
+            </div>
+          </label>
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/latte.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="5" name="coffee" class="button"> <span>Latte</span>
+            </div>
+          </label class="flex-item">
+
+          <label class="flex-item">
+            <div class="img_container">
+              <img src="img/tea.jpg" style="width:304px;height:228px;">
+              <input type="radio" value="6" name="coffee" class="button"> <span>I drink Tea (!)</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- Code taken from https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+      <!-- Trigger/Open The Modal -->
+      <div class="buttonbox">
+        <button id="modal_button">Click here to see result!</button>
+      </div>
+      <!-- The Modal -->
+      <div id="modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal_flex">
+            <p id="toggle_answer">Please complete all questions</p>
+            <img id="imagechange" src="img/stop.jpg" style="width:240px;height:309px;"></img>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
     <script src="main.js"></script>
+
   </body>
 </html>
