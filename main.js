@@ -12,11 +12,9 @@ $('.button').on('click', function(e) {
     sum = sum + choices[i];
   }
 
-  document.getElementById("demo1").innerHTML = sum;
-
-  // http://stackoverflow.com/questions/7647095/getting-html-elements-by-their-attribute-names
-  // https://www.w3schools.com/jsref/prop_node_parentelement.asp
-  // https://www.w3schools.com/jsref/dom_obj_radio.asp
+  // Referenced http://stackoverflow.com/questions/7647095/getting-html-elements-by-their-attribute-names for querySelectorAll
+  // Referenced https://www.w3schools.com/jsref/prop_node_parentelement.asp to update image container styling
+  // Referenced https://www.w3schools.com/jsref/dom_obj_radio.asp to access radio button properties
 
   function changeState(el) {
 
@@ -35,6 +33,7 @@ $('.button').on('click', function(e) {
       for (t=0; t<el.length; t++) {
         if (el[t].checked==false) {
           el[t].parentElement.style.opacity=0.5;
+          el[t].parentElement.style.border="1px solid red";
         }
         if (el[t].checked==true) {
           el[t].parentElement.style.opacity=1;
@@ -91,31 +90,31 @@ $('.button').on('click', function(e) {
 
   } else if (sum == 7) {
 
-    document.getElementById("toggle_answer").innerHTML = "Investment Banker";
+    document.getElementById("toggle_answer").innerHTML = "Investment Banker -- Merge and Acquire!";
     document.getElementById("imagechange").src="img/goldman.jpg";
     document.getElementById("imagechange").style="width:475px;height:307px";
 
   } else if (sum > 7 && sum <= 14) {
 
-    document.getElementById("toggle_answer").innerHTML = "Trader";
+    document.getElementById("toggle_answer").innerHTML = "Trader -- $$$$$$";
     document.getElementById("imagechange").src="img/trader.jpg";
     document.getElementById("imagechange").style="width:600px;height:300px";
 
   } else if (sum > 14 && sum <= 21) {
 
-    document.getElementById("toggle_answer").innerHTML = "Software Engineering (are you coding right now??)";
+    document.getElementById("toggle_answer").innerHTML = "Software Engineering -- Are you coding right now??";
     document.getElementById("imagechange").src="img/software.jpg";
     document.getElementById("imagechange").style="width:512px;height:341px";
 
   } else if (sum > 21 && sum <= 28) {
 
-    document.getElementById("toggle_answer").innerHTML = "Consulting";
+    document.getElementById("toggle_answer").innerHTML = "Consulting -- Didn't know what other picture to put";
     document.getElementById("imagechange").src="img/consulting.jpg";
     document.getElementById("imagechange").style="width:380px;height:285px";
 
   } else if (sum > 28 && sum <= 35) {
 
-    document.getElementById("toggle_answer").innerHTML = "Product Management";
+    document.getElementById("toggle_answer").innerHTML = "Product Management -- So you're a creative type";
     document.getElementById("imagechange").src="img/pm.jpg";
     document.getElementById("imagechange").style="width:450px;height:274px";
 
@@ -127,14 +126,10 @@ $('.button').on('click', function(e) {
 
   }
 
-  // console.log(choices);
-  // now you have an choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
-  // you'll need to do some calculations with this
-  // a naive approach would be to just choose the most common option - seems reasonable
 });
 
 // Code below taken from W3 schools: https://www.w3schools.com/howto/howto_css_modals.asp
-
+////////////////////////////////////
 // This is the modal itself
 var modal = document.getElementById('modal');
 
@@ -160,6 +155,9 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+////////////////////////////////////
+
+// General References
 
 // http://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
 // https://www.w3schools.com/jquery/misc_toarray.asp

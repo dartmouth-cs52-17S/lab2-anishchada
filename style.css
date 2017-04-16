@@ -5,7 +5,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-/* The following 20 lines of code were taken from the source of http://www.hooli.xyz/ */
+/* The following code was taken from the source of http://www.hooli.xyz/ */
 /*************************/
 
 .splash-video {
@@ -59,7 +59,7 @@
   height: 120px;
 }
 
-/* Question 1 flexbox structure */
+/* Question general flexbox structure */
 
 .question {
   display: flex;
@@ -99,26 +99,26 @@
 
 /*
 code to overlay button on image from http://stackoverflow.com/questions/16615222/how-to-overlay-embed-bootstrap-button-on-image
-Lines: 42-62
 */
 /*************************/
 .img_container {
-    position:relative;
-    display:inline-block;
-    text-align:center;
-    border:1px solid red;
-}
-
-.img_container:hover {
-  box-shadow: 10px 10px 5px grey;
+  position:relative;
+  display:inline-block;
+  text-align:center;
+  border:1px solid red;
 }
 
 .button {
-    position:absolute;
-    bottom:10px;
-    right:10px;
-    width:100px;
-    height:30px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  width:100px;
+  height:30px;
+}
+/*************************/
+
+.img_container:hover {
+  box-shadow: 10px 10px 5px grey;
 }
 
 ul {
@@ -128,7 +128,7 @@ ul {
 input[type=radio] {
   display: none;
 }
-/*************************/
+
 
 /* Referenced http://stackoverflow.com/questions/2491068/does-height-and-width-not-apply-to-span */
 
@@ -144,8 +144,7 @@ input[type=radio] {
 }
 
 /*
-Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-without-replacing-radio-buttons/
-Lines 70-100
+Radio button code adapted from https://www.sitepoint.com/replacing-radio-buttons-without-replacing-radio-buttons/
 */
 /*************************/
 /* One radio button per line */
@@ -162,23 +161,23 @@ label {
 
 /* the basic, unchecked style */
 [type="radio"] + span:before {
-  content: '';
   display: inline-block;
+  content: '';
+  box-shadow: 0 0 0 0.15em black;
+  margin-right: 0.5em;
+  transition: 0.5s ease all;
+
   width: 1em;
   height: 1em;
-  vertical-align: -0.25em;
-  border-radius: 1em;
-  border: 0.125em solid #fff;
-  box-shadow: 0 0 0 0.15em #000;
-  margin-right: 0.75em;
-  transition: 0.5s ease all;
+  vertical-align: -0.1em;
 }
 
 /* the checked style using the :checked pseudo class */
 [type="radio"]:checked + span:before {
-  background: green;
-  box-shadow: 0 0 0 0.25em #000;
+  background: rgb(51, 153, 255);
+  box-shadow: 0 0 0 0.25em black;
 }
+/*************************/
 
 .buttonbox {
   display: flex;
@@ -188,22 +187,21 @@ label {
   margin-top: 0px;
   margin-bottom: 100px;
 }
-/*************************/
 
-/* Button code taken from https://www.w3schools.com/css/css3_buttons.asp */
+/* Button code adapted from https://www.w3schools.com/css/css3_buttons.asp */
 /*************************/
 #modal_button {
 
   background-color: rgb(51, 153, 255);
-  border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
   border-radius: 5px;
+  padding: 20px 20px;
   font-size: 20px;
-
+  text-align: center;
+  border: none;
   width:300px;
 }
+/*************************/
 
 .modal_flex {
 
@@ -213,51 +211,48 @@ label {
   align-items: center;
 
 }
-/*************************/
 
-/* Code taken from https://www.w3schools.com/howto/howto_css_modals.asp */
+/* Code adapted from https://www.w3schools.com/howto/howto_css_modals.asp */
 /*************************/
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    height: 400px;
-    border-radius: 20px;
+  background-color: white;
+  margin: 15% auto;
+  padding: 15px;
+  /*border: 1px solid black;*/
+  width: 70%;
+  height: 400px;
+  border-radius: 20px;
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: rgb(51, 153, 255);
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 /*************************/
+
+/* changed flexbox orientation from row to colum here for resizing, just like in Lab 1 */
 
 @media only screen and (max-width: 640px) {
 
@@ -276,7 +271,5 @@ label {
   .splash-video {
     display: none;
   }
-
-
 
 }
