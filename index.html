@@ -24,20 +24,21 @@ Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-w
     <div class="cover">
 
       <!--
-      The following 5 lines of code and the associate panel video is from the Hooli XYZ mock website: http://www.hooli.xyz/
+      The following lines of code and the associate panel video is from the Hooli XYZ mock website: http://www.hooli.xyz/
       Thought it was awesome enough to merit inclusion!
       -->
 
-      <div>
-        <video autoplay loop class="splash-video" poster="/assets/splash-poster.jpg">
-          <source src="img/splash.webm" type="video/webm">
-          <source src="/assets/videos/splash.mp4" type="video/mp4">
-        </video>
+      <div class="splash">
+          <div class="panel">
+              <video autoplay loop class="splash-video" poster="img/splash-poster.jpg">
+                  <source src="img/splash.webm" type="video/webm">
+              </video>
+              <div class="splash-panel-image subtitle">
+                Choose your path
+              </div>
+          </div>
       </div>
 
-      <div class="heading">
-        <h1>What is your postgrad career?</h1>
-      </div>
 
       <div class="qtitle">
         <h3 class="question">What is your favorite sport?<h3>
@@ -145,8 +146,8 @@ Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-w
 
           <label class="flex-item">
             <div class="img_container">
-              <img src="img/eba.jpg" style="width:304px;height:228px;">
-              <input type="radio" value="6" name="food" class="button"> <span>Off-campus</span>
+              <span id="textspan">Off-campus</span>
+              <input type="radio" value="6" name="food" class="button"> <span>DDS?</span>
             </div>
           </label>
 
@@ -426,6 +427,11 @@ Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-w
           </label>
 
         </div>
+
+        <div class="heading">
+          <h1>What is your postgrad career?</h1>
+        </div>
+
       </div>
 
       <!-- Code taken from https://www.w3schools.com/howto/howto_css_modals.asp -->

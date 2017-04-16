@@ -9,6 +9,7 @@
 
 .splash-video {
   height: 90vh;
+  margin-bottom: 80px;
 }
 
 @media (min-width: 1650px) {
@@ -27,17 +28,35 @@
   }
 }
 
+/* Splash panel section */
+.splash-panel-image {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+}
+
+.splash-panel-image.subtitle {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 7px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 /*************************/
 
 .heading {
   display: flex;
   justify-content: center;
   align-self: center;
-  padding-bottom: 260px;
+  padding-bottom: 350px;
   background-image: url(img/careers.jpg);
-  /*background-size: 956px 598px;*/
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 100px;
 }
 
@@ -50,8 +69,8 @@
 }
 
 .qtitle {
-  background-color: skyblue;
-  width: 1256px;
+  background-color: rgb(51, 153, 255);
+  width: 1056px;
   align-self: center;
   color: white;
 }
@@ -76,7 +95,7 @@
 }
 
 .flex-item {
-  padding: 10px;
+  padding: 35px;
 }
 
 /*
@@ -111,6 +130,19 @@ input[type=radio] {
   display: none;
 }
 /*************************/
+
+/* Referenced http://stackoverflow.com/questions/2491068/does-height-and-width-not-apply-to-span */
+
+#textspan {
+  display: block;
+  width:304px;
+  height: 250px;
+
+  color: red;
+  font-style: italic;
+  font-size: 50px;
+
+}
 
 /*
 Radio button code taken from https://www.sitepoint.com/replacing-radio-buttons-without-replacing-radio-buttons/
@@ -154,7 +186,7 @@ label {
   flex-direction: row;
   justify-content: center;
 
-  margin-top: 100px;
+  margin-top: 0px;
   margin-bottom: 100px;
 }
 /*************************/
@@ -163,7 +195,7 @@ label {
 /*************************/
 #modal_button {
 
-  background-color: skyblue;
+  background-color: rgb(51, 153, 255);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -227,13 +259,3 @@ label {
     cursor: pointer;
 }
 /*************************/
-
-/*
-Favorite sport
-Favorite place to eat on campus
-Major
-Coffee of choice
-Best TV Show here (one option is "Haven't see any...")
-Best movie (same structure as above)
-What Seinfeld character are you?
-*/

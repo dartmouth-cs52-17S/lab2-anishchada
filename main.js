@@ -45,7 +45,6 @@ $('.button').on('click', function(e) {
     }
 
     return toggle;
-
   }
 
   var arr = []
@@ -162,9 +161,6 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-// document.getElementById("cats").disabled = true;
-// document.getElementById("cats2").style.opacity = 0.5;
 
 // http://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
 // https://www.w3schools.com/jquery/misc_toarray.asp
